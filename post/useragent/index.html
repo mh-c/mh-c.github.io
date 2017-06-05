@@ -1,0 +1,196 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Minghao">
+		<meta name="description" content="A fat guy">
+		<meta name="generator" content="Hugo 0.21" />
+		<title>User Agent Note &middot; Mh&#39;s Blog</title>
+		<link rel="shortcut icon" href="https://mh-c.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://mh-c.github.io/css/style.css">
+		<link rel="stylesheet" href="https://mh-c.github.io/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://mh-c.github.io/css/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://mh-c.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://mh-c.github.io/post'>Archive</a>
+	<a href='https://mh-c.github.io/tags'>Tags</a>
+	<a href='https://mh-c.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        User Agent Note
+                    </h1>
+                    <h2 class="headline">
+                    Jun 5, 2017 00:00
+                    · 475 words
+                    · 3 minutes read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <dl>
+<dt>User agent</dt>
+<dd>Software (a software agent) that is acting on behalf of a user.</dd>
+<dd>This term when refering to web browser, is a <strong>String</strong> (or a line of text) telling a web site information about the browser and operating system.</dd>
+<dd>A User-Agent field is included in HTTP header when a browser connects to a website.</dd>
+</dl>
+
+<p>###PHP syntax:###</p>
+
+<pre><code class="language-PHP">$u_agent = $_SERVER['HTTP_USER_AGENT'];
+</code></pre>
+
+<p><strong>Use of RegExp to identify browsers/OS</strong>
+Something like:</p>
+
+<pre><code>if (preg_match('/linux/i', $u_agent)) {
+   $platform = 'linux';
+}elseif (preg_match('/macintosh|mac os x/i', $u_agent)) {
+   $platform = 'mac';
+}elseif (preg_match('/windows|win32/i', $u_agent)) {
+   $platform = 'windows';
+}
+</code></pre>
+
+<p>###Examing User Agents###
+Use PHP print or go to any website like <a href="http://www.whoishostingthis.com/tools/user-agent/">whatsmyuseragent.com</a></p>
+
+<p>For example, Firefox&rsquo;s user agent on Windows 7:</p>
+
+<pre><code>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0
+</code></pre>
+
+<p>IE9 on Windows 7:</p>
+
+<pre><code>Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+</code></pre>
+
+<p>IE11&rsquo;s user agent on Windows 7:</p>
+
+<pre><code>Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+</code></pre>
+
+<p>Chrome&rsquo;s user agent on Windows 7:</p>
+
+<pre><code>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+</code></pre>
+
+<p>Why? &mdash;&gt; History of browser
+First browsers: Mosaic,
+next is Mozilla who is more advanced and in particular - it supports frames.
+Web servers check user agents and see whether it contains the word &ldquo;Mozilla&rdquo;, and then sent pages containing frames. To other browsers, it sent old pages without frames.</p>
+
+<p>Next IE comes in, it supports frames too but it didnt receive web pages with frames, so it adds &ldquo;Mozilla&rdquo; to their user agents and throw in other info, like &lsquo;compatible&rsquo; and &lsquo;Trident/5.0&rsquo; rendering engine.</p>
+
+<p>Others browser comes later and did the same thing.</p>
+
+<p>Eventually, some servers looked for the word Gecko – Firefox’s rendering engine – and served Gecko browsers different pages than older browsers. KHTML – originally developed for Konquerer on Linux’s KDE desktop – added the words “like Gecko” so they’d get the modern pages designed for Gecko, too. WebKit was based on KHTML – when it was developed, they added the word WebKit and kept the original “KHTML, like Gecko” line for compatibility purposes. In this way, browser developers kept adding words to their user agents over time.</p>
+
+<p>Web servers don’t really care what the exact user agent string is – they just check to see if it contains a specific word.</p>
+
+<p><strong>Importance of RegExp comes in</strong></p>
+
+<p>###Uses###
+* Serve different pages to different browsers. Eg. Simpler webpages to older browers.
+* Displaying content to different OS. Eg. Slimmed-down page for mobile.
+* Statistic collection on browers/OS accesing to the website.</p>
+
+<p>###Web-crawling bots###
+Web-crawling bots use user agents, too. For example, Google’s web crawler identifies itself as:</p>
+
+<pre><code>Googlebot/2.1 (+http://www.google.com/bot.html)
+</code></pre>
+
+<p>Website can give bots special treatment like:
+* Allowing them through mandatory registration screens.
+* Restrict certain areas of the website
+* Or ask the crawling bots go away -.-</p>
+
+<hr />
+
+<p>Major browsers contain ways to set custom user agents.
+To see what web servers send to different browsers.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="your_facebook_link">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="your_github_link">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="your_twitter_link">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> Minghao
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://mh-c.github.io/js/jquery-2.2.4.min.js"></script>
+<script src="https://mh-c.github.io/js/main.js"></script>
+<script src="https://mh-c.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

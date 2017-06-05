@@ -1,0 +1,140 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Minghao">
+		<meta name="description" content="A fat guy">
+		<meta name="generator" content="Hugo 0.21" />
+		<title>Laravel Lifecycle Overview &middot; Mh&#39;s Blog</title>
+		<link rel="shortcut icon" href="https://mh-c.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://mh-c.github.io/css/style.css">
+		<link rel="stylesheet" href="https://mh-c.github.io/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://mh-c.github.io/css/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://mh-c.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://mh-c.github.io/post'>Archive</a>
+	<a href='https://mh-c.github.io/tags'>Tags</a>
+	<a href='https://mh-c.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Laravel Lifecycle Overview
+                    </h1>
+                    <h2 class="headline">
+                    Jun 5, 2017 00:00
+                    · 170 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p>####First Things####
+Entry point: <code>public/index.php</code>
+Key code:
+    //loads the Composer generated autoloader definition
+    require <strong>DIR</strong>.&lsquo;/../bootstrap/autoload.php&rsquo;;
+    //Retrieve an instance of the app/service container
+    $app = require_once <strong>DIR</strong>.&lsquo;/../bootstrap/app.php&rsquo;;</p>
+
+<p>####HTTP/Console kernels####
+1. Request comes in kernel
+2. Kernal defines an array of <code>bootstrapers</code> who: configure error handling, configure logging, detect the application environment, and perform other tasks that need to be done before the request is actually handled.
+3. Kernal defines a list of <code>middleware</code> who: handle read and writing HTTP session, determine maintenance mode, verify CSRF token etc&hellip;
+4. Request comes in and Response goes out</p>
+
+<p><strong>Service Providers</strong>
+<code>config\app.php</code> find the <code>providers</code> arrays
+<code>Register</code> all, then <code>boot</code></p>
+
+<p><strong>Dispatch request</strong>
+Once the application has been bootstrapped and all service providers have been registered, the Request will be handed off to the router for dispatching. The router will dispatch the request to a route or controller, as well as run any route specific middleware.</p>
+
+<p>####Focus On Service Provides####
+1. App instance created
+2. Service providers registered
+3. Request handed to bootstrap application
+<code>app\providers</code> directory</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="your_facebook_link">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="your_github_link">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="your_twitter_link">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> Minghao
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://mh-c.github.io/js/jquery-2.2.4.min.js"></script>
+<script src="https://mh-c.github.io/js/main.js"></script>
+<script src="https://mh-c.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>
