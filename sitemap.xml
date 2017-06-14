@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mh-c.github.io/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://mh-c.github.io/post/real-estate-bubble/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -15,6 +15,11 @@
   <url>
     <loc>https://mh-c.github.io/post/useragent/</loc>
     <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mh-c.github.io/post/nba-final-2017/</loc>
+    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,60 +38,19 @@
   </url>
   
   <url>
-    <loc>https://mh-c.github.io/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mh-c.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mh-c.github.io/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mh-c.github.io/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mh-c.github.io/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mh-c.github.io/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mh-c.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mh-c.github.io/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://mh-c.github.io/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mh-c.github.io/post/</loc>
-    <lastmod>2017-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,19 +6,18 @@
     <description>Recent content on Mh&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mh-c.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://mh-c.github.io/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>上海南京路暴动</title>
+      <link>https://mh-c.github.io/post/real-estate-bubble/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mh-c.github.io/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>https://mh-c.github.io/post/real-estate-bubble/</guid>
+      <description>http://www.bbc.com/zhongwen/simp/chinese-news-40237604 出台政策保护泡沫经济不会崩，为商者想尽办法钻漏洞唯利是图，想赚ez money的人民利益受损不满意起来闹，然后又得动用媒体封杀消息。 很无奈啊</description>
     </item>
     
     <item>
@@ -42,26 +41,21 @@ $u_agent = $_SERVER[&#39;HTTP_USER_AGENT&#39;];  Use of RegExp to identify brows
     </item>
     
     <item>
+      <title>NBA-2017年决赛，骑士1-4败北</title>
+      <link>https://mh-c.github.io/post/nba-final-2017/</link>
+      <pubDate>Sun, 04 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mh-c.github.io/post/nba-final-2017/</guid>
+      <description>又是一年总决赛，去年这个时候我还能拉着上司一起看G7，今年只能看看文字直播跟10年前在初中一样[喵喵]。 结果并不出人意料，在数据时代给出的9</description>
+    </item>
+    
+    <item>
       <title>詹猩猩</title>
       <link>https://mh-c.github.io/post/07final_g2/</link>
       <pubDate>Sun, 04 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mh-c.github.io/post/07final_g2/</guid>
       <description>时隔了这么多年，终于又看起了NBA文字直播。 (小tips: use &amp;ldquo; &amp;rdquo; for \n in markdown) 2017总决赛G2，实习中有点闲，刷一刷google APAC test,看看</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://mh-c.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mh-c.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
   </channel>
