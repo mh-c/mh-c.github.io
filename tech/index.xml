@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teches on Mh&#39;s Blog</title>
+    <link>https://mh-c.github.io/tech/</link>
+    <description>Recent content in Teches on Mh&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jun 2017 13:58:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://mh-c.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://mh-c.github.io/tech/good-to-great/</link>
+      <pubDate>Thu, 01 Jun 2017 13:58:13 +0800</pubDate>
+      
+      <guid>https://mh-c.github.io/tech/good-to-great/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ultricies nisi. Vestibulum tempus sapien sed turpis commodo, ut blandit massa volutpat. In lobortis volutpat justo eget pharetra. Aenean non ultricies lorem. Morbi vitae gravida enim. Curabitur facilisis convallis libero ut semper. Ut eget orci at magna rutrum volutpat in ac magna. Cras laoreet ultricies ipsum vitae placerat. Nullam viverra metus vitae odio fringilla, vitae tempor augue suscipit. Quisque convallis vulputate ullamcorper.</description>
+    </item>
+    
+  </channel>
+</rss>

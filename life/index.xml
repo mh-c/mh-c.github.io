@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mh&#39;s Blog</title>
-    <link>https://mh-c.github.io/</link>
-    <description>Recent content on Mh&#39;s Blog</description>
+    <title>Lives on Mh&#39;s Blog</title>
+    <link>https://mh-c.github.io/life/</link>
+    <description>Recent content in Lives on Mh&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mh-c.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mh-c.github.io/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,15 +36,6 @@
       
       <guid>https://mh-c.github.io/life/07final_g2/</guid>
       <description>时隔了这么多年，终于又看起了NBA文字直播。 2017总决赛G2，实习中有点闲，刷一刷algo,看看tech blog，然后目睹詹姆斯面对太过强</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://mh-c.github.io/tech/good-to-great/</link>
-      <pubDate>Thu, 01 Jun 2017 13:58:13 +0800</pubDate>
-      
-      <guid>https://mh-c.github.io/tech/good-to-great/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ultricies nisi. Vestibulum tempus sapien sed turpis commodo, ut blandit massa volutpat. In lobortis volutpat justo eget pharetra. Aenean non ultricies lorem. Morbi vitae gravida enim. Curabitur facilisis convallis libero ut semper. Ut eget orci at magna rutrum volutpat in ac magna. Cras laoreet ultricies ipsum vitae placerat. Nullam viverra metus vitae odio fringilla, vitae tempor augue suscipit. Quisque convallis vulputate ullamcorper.</description>
     </item>
     
   </channel>
